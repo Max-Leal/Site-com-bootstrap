@@ -1,0 +1,48 @@
+.btn-primary {
+  background-color: #a04cee;
+  border: solid #7b22cf;
+}
+.btn-primary:hover {
+  background-color: #a04cee;
+  border: solid #7b22cf;
+}
+
+.btn-primary:active {
+  background-color: #7b22cf !important;
+  border: solid #7b22cf !important;
+  box-shadow: none !important;
+}
+
+.border-primary {
+  border: 2px solid #a04cee !important;
+}
+
+.border-primary:hover {
+  border: 2px solid #7b22cf !important;
+}
+
+.no-margin {
+  margin: 0px p !important;
+}
+
+.iframe-custom {
+  background-color: #5d2b8b;
+}
+
+.bg-darker {
+  background-color: #1b1d20;
+}
+
+.bg-purple {
+  background-color: #5d2b8b;
+}
+
+.triangle-effect {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid #6005b6;
+  background: transparent;
+}
