@@ -9,34 +9,53 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Site</title>
-   
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
       <div class="container">
         <a class="navbar-brand" href="#">Meu Site</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.html"><strong>Contato</strong></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html"
+                ><strong>Contato</strong></a
+              >
+            </li>
           </ul>
           <div class="form-check form-switch ms-3">
             <input class="form-check-input" type="checkbox" id="themeSwitch" />
             <label class="form-check-label text-light" for="themeSwitch"
-              >Modo Escuro</label>
+              >Modo Escuro</label
+            >
           </div>
 
           <div class="d-flex align-items-center ms-auto">
             <ul class="navbar-nav navbar-collapse" id="navbarNav">
-                <li class="nav-item"><a href="login.html" class="nav-link btn btn-dark">Login</a></li>
-                <li class="nav-item"><a href="cadastro.html" class="nav-link btn btn-dark">Cadastro</a></li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link btn btn-dark">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="cadastro.html" class="nav-link btn btn-dark"
+                  >Cadastro</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -45,7 +64,13 @@
 
     <div class="container mt-5">
       <div class="row justify-content-center">
-       
+        <div class="margin-top">
+      <div class="square-effect" style="animation-delay: 8s"></div>
+      <div class="square-effect" style="animation-delay: 4s"></div>
+      <div class="square-effect" style="animation-delay: 2s"></div>
+      <div class="square-effect" style="animation-delay: 6s"></div>
+      <div class="square-effect" style="animation-delay: 0s"></div>
+    </div>
       </div>
     </div>
 
@@ -55,12 +80,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document.getElementById("themeSwitch").addEventListener("change", function () {
-        const html = document.documentElement;
-        const newTheme = this.checked ? "light" : "dark";
-        html.setAttribute("data-bs-theme", newTheme);
-        document.querySelector("label[for='themeSwitch']").textContent = newTheme === "light" ? "Modo Claro" : "Modo Escuro";
-      });
+      document
+        .getElementById("themeSwitch")
+        .addEventListener("change", function () {
+          const html = document.documentElement;
+          const newTheme = this.checked ? "light" : "dark";
+          html.setAttribute("data-bs-theme", newTheme);
+          document.querySelector("label[for='themeSwitch']").textContent =
+            newTheme === "light" ? "Modo Claro" : "Modo Escuro";
+        });
     </script>
   </body>
 </html>

@@ -9,9 +9,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Site</title>
-    
   </head>
   <body>
     <!-- Navbar -->
@@ -41,53 +40,118 @@
           <div class="form-check form-switch ms-3">
             <input class="form-check-input" type="checkbox" id="themeSwitch" />
             <label class="form-check-label text-light" for="themeSwitch"
-              >Modo Escuro</label>
+              >Modo Escuro</label
+            >
           </div>
 
           <div class="d-flex align-items-center ms-auto">
             <ul class="navbar-nav navbar-collapse" id="navbarNav">
-                <li class="nav-item"><a href="login.html" class="nav-link btn btn-dark">Login</a></li>
-                <li class="nav-item"><a href="cadastro.html" class="nav-link btn btn-dark"><strong>Cadastro</strong></a></li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link btn btn-dark">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="cadastro.html" class="nav-link btn btn-dark"
+                  ><strong>Cadastro</strong></a
+                >
+              </li>
             </ul>
           </div>
-
         </div>
       </div>
     </nav>
 
     <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card p-4">
-              <h3 class="mb-3 alig">Cadastro no sistema</h3>
-              <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome" />
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Email</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu email" />
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Senha</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha" />
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Senha novamente</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha novamente" />
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Data de nascimento</label>
-                <input type="date" class="form-control" id="formGroupExampleInput" />
-              </div>
-              <button class="btn btn-primary w-100">Enviar para análise</button>
+      <div class="row justify-content-center">
+        <div
+          class="square-effect-vertical translate-left-top"
+          style="animation-delay: 8s"
+        ></div>
+        <div
+          class="square-effect-vertical translate-left-top"
+          style="animation-delay: 3s"
+        ></div>
+        <div
+          class="square-effect-vertical translate-left-top"
+          style="animation-delay: 6s"
+        ></div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h3 class="mb-3 alig">Cadastro no sistema</h3>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Digite seu nome"
+              />
             </div>
-            <div class="alert alert-warning mt-3" role="alert">
-              Atenção! Verifique as informações antes de enviar.
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label"
+                >Email</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Digite seu email"
+              />
             </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label"
+                >Senha</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label"
+                >Senha novamente</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Digite sua senha novamente"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label"
+                >Data de nascimento</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="formGroupExampleInput"
+              />
+            </div>
+            <button class="btn btn-primary w-100">Enviar para análise</button>
+          </div>
+          <div class="alert alert-warning mt-3" role="alert">
+            Atenção! Verifique as informações antes de enviar.
           </div>
         </div>
+        <div
+          class="square-effect-vertical translate-right-top"
+          id="translate-right-top"
+          style="animation-delay: 7s"
+        ></div>
+        <div
+          class="square-effect-vertical translate-right-top"
+          id="translate-right-top"
+          style="animation-delay: 4s"
+        ></div>
+        <div
+          class="square-effect-vertical translate-right-top"
+          id="translate-right-top"
+          style="animation-delay: 1s"
+        ></div>
       </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -95,13 +159,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      document.getElementById("themeSwitch").addEventListener("change", function () {
-        const html = document.documentElement;
-        const newTheme = this.checked ? "light" : "dark";
-        html.setAttribute("data-bs-theme", newTheme);
-        document.querySelector("label[for='themeSwitch']").textContent = newTheme === "light" ? "Modo Claro" : "Modo Escuro";
-      });
-
+      document
+        .getElementById("themeSwitch")
+        .addEventListener("change", function () {
+          const html = document.documentElement;
+          const newTheme = this.checked ? "light" : "dark";
+          html.setAttribute("data-bs-theme", newTheme);
+          document.querySelector("label[for='themeSwitch']").textContent =
+            newTheme === "light" ? "Modo Claro" : "Modo Escuro";
+        });
     </script>
   </body>
 </html>
